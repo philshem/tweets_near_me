@@ -4,6 +4,8 @@
 
 ![output map](http://i.imgur.com/BKf7Nt3.png)
 
+#### Red marker indicates search location. Blue markers are all geo-enabled tweets in the past 7 days that are within search radius (1 km in this case)
+
 **Requirements:**
 
 1. Create authentication parameters for the [Twitter REST API](https://dev.twitter.com/rest/public) and add them to your *config.py* file
@@ -46,9 +48,12 @@
 
 **To Do:**
 
-+ Add a date filter in the config (only go back 24 hours, etc)
-+ Make zoom_start a function of all points
++ Add a date filter in the config (for example, only show last 24 hours)
+
++ Make map zoom_start to fit all points
+
 + Make color of marker have gradient based on time (most recent are darkest, oldest are faintest)
+
 + Embed tweet in iframe (or something)
 
 
