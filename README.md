@@ -6,13 +6,23 @@
 
 **Requirements:**
 
-1. Create authentication parameters for the [Twitter REST API](https://dev.twitter.com/rest/public)
-2. Add those parameters to your config.py file
-3. Modify the config.py file to include your address, OR your latitude/longitude. Also, add specific search terms if desired.
-4. Generate tweets.html file by running 'python tweets_near_me.py'
+1. Create authentication parameters for the [Twitter REST API](https://dev.twitter.com/rest/public) and add them to your *config.py* file
+2. Modify the *config.py* file to include your address
+
+        my_address = 'Technoparkstrasse 1, 8005 Zürich, Switzerland'   
+  
+  Or your latitude/longitude
+  
+       my_latlong = [47.3901151,8.5151409]
+
+3. Add specific search terms to *config.py*. Only geo-enabled tweets will be returned
+ 
+         searchlist = ['dataviz','opendata'] 
+ 
+4. Generate tweets.html file by running `python tweets_near_me.py`
 5. To view HTML page, navigate with command prompt to the folder containing tweets.html, and start simple web server:
   
-    python -m SimpleHTTPServer 8000
+          python -m SimpleHTTPServer 8000
 
 6. With browser, visit page [http://localhost:8000/tweets.html](http://localhost:8000/tweets.html)
 
@@ -27,6 +37,10 @@
 + [Python-twitter](https://pypi.python.org/pypi/python-twitter/)
 
          pip install python-twitter
+
++ [geopy](https://pypi.python.org/pypi/geopy/)
+
+        pip install geopy
 
 ---
 
