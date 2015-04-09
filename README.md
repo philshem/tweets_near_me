@@ -38,7 +38,7 @@
 
          pip install python-twitter
 
-+ [geopy](https://pypi.python.org/pypi/geopy/)
++ [geopy](https://pypi.python.org/pypi/geopy/) (not needed if my_latlong is set in *config.py*)
 
         pip install geopy
 
