@@ -1,6 +1,6 @@
 # tweets near me
 
-### Download nearby twitter activity and display tweets on a map
+### Download nearby twitter activity and display tweets on an interactive map
 
 ![output map](http://i.imgur.com/BKf7Nt3.png)
 
@@ -14,18 +14,28 @@
   
     python -m SimpleHTTPServer 8000
 
-6. With browser, visit page http://localhost:8000/tweets.html
+6. With browser, visit page [http://localhost:8000/tweets.html](http://localhost:8000/tweets.html)
+
+---
 
 **Dependencies:** (not including standard python libraries)
 
-    pip install folium
-    pip install python-twitter
-    
-** To Do:**
++ [Folium](folium.readthedocs.org/en/latest/) (Leaflet.js for Python)
+
+         pip install folium
+
++ [Python-twitter](https://pypi.python.org/pypi/python-twitter/)
+
+         pip install python-twitter
+
+---
+
+**To Do:**
 
 + Add a date filter in the config (only go back 24 hours, etc)
 + Make zoom_start a function of all points
 + Make color of marker have gradient based on time (most recent are darkest, oldest are faintest)
++ Embed tweet in iframe (or something)
 
 
 
